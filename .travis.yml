@@ -13,8 +13,7 @@ python:
 install:
   - pip install virtualenv -U
   - python -m venv ./venv
-  - ls ./venv
-  - cd ./venv/scripts
+  - cd ./venv/bin
   - source activate
   - pip install -r requirements.txt
 # command to run tests
