@@ -12,9 +12,9 @@ python:
 # command to install dependencies
 install:
   - pip install virtualenv -U
-  - python -m venv ./venv
-  - source ./venv/bin/activate
-  - ./venv/bin/pip install -r requirements.txt
+  - virtualenv venv --distribute
+  - source venv/bin/activate
+  - venv/bin/pip install -r requirements.txt
 # command to run tests
 script:
   - pytest
