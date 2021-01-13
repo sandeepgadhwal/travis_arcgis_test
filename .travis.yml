@@ -11,7 +11,7 @@ python:
 #  - "nightly"  # nightly build
 # command to install dependencies
 install:
-  - pip install pip setuptools -U && pip install -r requirements.txt
+  - pip install pip setuptools -U && pip install pywin32==225 && pip install -r requirements.txt
 # command to run tests
 script:
   - pytest
