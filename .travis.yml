@@ -17,4 +17,4 @@ install:
   - venv/bin/pip install -r requirements.txt
 # command to run tests
 script:
-  - pytest pytest.py
+  - venv/bin/python -m pytest pytest.py
