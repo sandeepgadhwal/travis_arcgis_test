@@ -14,7 +14,7 @@ install:
   - pip install virtualenv -U
   - python -m venv ./venv
   - source ./venv/bin/activate
-  - ./venv/bin/pip3 install -r requirements.txt
+  - ./venv/bin/pip install -r requirements.txt
 # command to run tests
 script:
   - pytest
